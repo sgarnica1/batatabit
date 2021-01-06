@@ -138,7 +138,58 @@ main .main-exchange-container .main-exchange-container-title p {
   line-height: 1.6rem;
   color: #757575;
 }
-
-.hola {
-  display: inline-block;
+.main-tables-container .main-tables-container-title {
+  font-size: 1.8rem;
+  line-height: 23px;
+  font-weight: bold;
+  color: #FF9536;
+  width: 200px;
+  margin: 0 auto 10px auto;
+  text-align: left;
+  padding-left: 10px;
+}
+.main-tables-container .main-table-content {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 200px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.main-table-content .main-table-item {
+  padding: 10px 0 10px 15px;
+  border: 1px solid #fafafa;
+  
+}
+.main-table-currency {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #B5B0AC;
+  line-height: 1.9rem;
+  font-family: "Inter", sans-serif;
+  text-align: left;
+}
+.main-table-value {
+  font-size: 1.4rem;
+  color: #757575;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  text-align: left;
+}
+.main-table-value span img {
+  padding-left: 15px;
+}
+.main-table-update {
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  color: var(--warm-black);
+  padding: 8px;
+  width: 180px;
+  margin: 0 auto;
+  background-color: var(--soft-orange);
+  border-radius: 8px;
 }
