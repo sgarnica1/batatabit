@@ -177,10 +177,10 @@ main .main-exchange-container .main-exchange-container-title p {
   color: #757575;
   font-family: "Inter", sans-serif;
   font-weight: normal;
-  text-align: left;
+  text-align: center;
 }
 .main-table-value span img {
-  padding-left: 15px;
+  padding-left: 8px;
 }
 .main-table-update {
   font-size: 1.2rem;
@@ -192,4 +192,12 @@ main .main-exchange-container .main-exchange-container-title p {
   margin: 0 auto;
   background-color: var(--soft-orange);
   border-radius: 8px;
+}
+
+.main-tables-container .main-tables-container-title-2 {
+  color: var(--secondary-blue);
+  margin-top: 35px;
+}
+#main-table-update-2 {
+  background-color: #E7F5FF;
 }
