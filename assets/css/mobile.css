@@ -26,6 +26,7 @@
 html {
   font-size: 62.5%;
   font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -148,6 +149,16 @@ main .main-exchange-container .main-exchange-container-title p {
   text-align: left;
   padding-left: 10px;
 }
+.main-tables-container-1{
+  margin-left: calc(50%);
+}
+.main-table-container-2 .main-table-content {
+  margin-right: 100px;
+}
+#blank-space, #blank-space-2 {
+  color: var(--off-white);
+  margin-left: 50px;
+}
 .main-tables-container .main-table-content {
   display: grid;
   grid-template-columns: repeat(2, 100px);
@@ -158,6 +169,7 @@ main .main-exchange-container .main-exchange-container-title p {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 20px;
+  scroll-snap-align: center;
 }
 .main-table-content .main-table-item {
   padding: 10px 0 10px 15px;
@@ -196,7 +208,6 @@ main .main-exchange-container .main-exchange-container-title p {
 
 .main-tables-container .main-tables-container-title-2 {
   color: var(--secondary-blue);
-  margin-top: 35px;
 }
 #main-table-update-2 {
   background-color: #E7F5FF;
@@ -284,4 +295,181 @@ main .main-exchange-container .main-exchange-container-title p {
   font-size: 1.4rem;
   line-height: 1.8rem;
   color: #808080;
+}
+
+.bitcoin-img-container {
+  width: 100%;
+  min-width: 320px;
+  height: 70vh;
+  background-image: url('../img/bitcoinbaby2x.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bitcoin-img-container h2 {
+  padding-top: 60px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--just-white);
+  text-align: center;
+}
+
+.main-plans-container {
+  background-color: var(--off-white);
+  width: 100%;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.plans-title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.plans-title h2 {
+  padding-top: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+.plans-title p {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: #757575;
+}
+
+.plans-container-slider {
+  display: flex;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  gap: 20px;
+  padding: 0 10px;
+}
+.plans-container-slider .plans-container-2 {
+  margin-left: 50px;
+}
+.plans-container {
+  position: relative;
+  scroll-snap-align: center;
+  width: 65%;
+  min-width: 180px;
+  max-width: 300%;
+  height: 250px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+  padding: 0 15px;
+  background-color: var(--just-white);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+}
+.recomendado {
+  position: absolute;
+  width: 120px;
+  height: 31px;
+  top: -12px;
+  font-size: 1.3rem;
+  padding: 6px;
+  left: calc(50% - 60px);
+  background-color: var(--bitcoin-orange);
+  border-radius: 8px;
+  color: white;
+}
+.plans-container-title {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: black;
+}
+.plans-price{
+  margin-top: 10px;
+  padding: 5px 0;
+  font-size: 5.2rem;
+  font-weight: bold;
+  color: black;
+  position: relative;
+  font-family: "Inter", sans-serif;
+}
+.plans-price span {
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: 300;
+  /* vertical-align: 45%; */
+  top: 5px;
+  left: calc(50% - 40px);
+}
+.plans-text {
+  font-size: 1.2rem;
+  color: #757575;
+}
+.plans-button {
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  background-color: var(--off-white);
+  outline: none;
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 5px;
+  color: var(--warm-black);
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.plans-button span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('../icons/orange-right-arrow.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: text-bottom;
+}
+
+.plans-container-3 {
+  background-color: var(--warm-black);
+}
+.plans-container-3 .plans-container-information .plans-container-title, .plans-container-3 .plans-container-information .plans-price{
+  color: white;
+}
+.plans-container-3 .plans-container-information .plans-text {
+  color: var(--off-white);
+}
+.plans-container-3 .plans-container-information .plans-button {
+  background-color: var(--warm-black);
+  color: var(--off-white);
+}
+.plans-container-3 .plans-price span {
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: 300;
+  top: 5px;
+  left: calc(50% - 60px);
+}
+
+.main-exchange-container .tables {
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  gap: 30px;
+}
+
+@media screen and (min-width: 475px) {
+  .main-exchange-container .tables {
+    justify-content: center;
+  }
+  .main-tables-container-1 {
+    margin-left: 0;
+  }
+  #blank-space {
+    display: none;
+  }
 }
