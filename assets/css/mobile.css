@@ -472,4 +472,10 @@ main .main-exchange-container .main-exchange-container-title p {
   #blank-space {
     display: none;
   }
+  .plans-container-slider {
+    overflow: hidden;
+  }
+  .main-exchange-container .tables {
+    overflow: hidden;
+  }
 }
