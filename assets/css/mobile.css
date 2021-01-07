@@ -462,20 +462,32 @@ main .main-exchange-container .main-exchange-container-title p {
   gap: 30px;
 }
 
-@media screen and (min-width: 475px) {
-  .main-exchange-container .tables {
-    justify-content: center;
-  }
-  .main-tables-container-1 {
-    margin-left: 0;
-  }
-  #blank-space {
-    display: none;
-  }
-  .plans-container-slider {
-    overflow: hidden;
-  }
-  .main-exchange-container .tables {
-    overflow: hidden;
-  }
+footer {
+  display: flex;
+  background-color: var(--bitcoin-orange);
+  width: 100%;
+  height: 150px;
+  /* padding: 20px; */
+  /* justify-content: center; */
+  
 }
+footer section {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.footer-section-socialMedia ul {
+  list-style-type: none;
+}
+.footer-section-socialMedia ul li {
+  margin: 10px 0;
+}
+.footer-section-socialMedia ul li a{
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  text-decoration: none;
+  color: white;
+}
+
